@@ -1,15 +1,10 @@
-#!/bin/bash
+# Serveur DHCP sous Linux
+- Installer le server (sudo apt install isc-dhcp-server)
+- Changer l'interface ipv4 (sudo nano /etc/default/isc-dhcp-server)
+- Configurer le serveur (sudo nano /etc/dhcp/dhcpd.conf)
+- Mettre son IP statique, avec l'adresse MAC du client cible
+- Redémarrer le serveur, aprè avoir s'être mis en réseau interne
+- lancer sa deuxiéme VM, Pinger de la Debian vers l'Ubuntu
+- Quand le ping est fini, le test est terminer.
 
-# Vérification des arguments:
-PROJECT_NAME="$1"
-
-PROJECT_DIR="./$PROJECT_NAME"
-
-# Création du dossier Projet:
-mkdir -p "$PROJECT_DIR"
-
-# Création du fichier README.md:
-touch README.md /home/fabien/Projets/SuperScript/
-
-# Création du fichier Script:
-SCRIPT_FILE="$PROJECT_DIR/$PROJECT_NAME.SH"
+## Félicitation vous avez réussi à faire, votre premier serveur sous Linux 🎉
